@@ -1,0 +1,63 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+body {
+    background-color: #f4f4f4;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto; 
+  }
+
+header {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+}
+
+h3 {
+    font-display: 'EB Garamond', serif;
+}
+
+a.nav:link {
+    color: #34343f;
+    text-decoration: none;
+}
+
+a.nav:visited {
+    color: #34343f;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    color: #eaa59a;
+    text-decoration: none;
+}
+a:link {
+    color: #7a7d7d;
+    text-decoration: none;
+}
+a:visited {
+    color: #7a7d7d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7a7d7d;
+    background-color: #eaa59a
+    text-decoration: none;  
+}
