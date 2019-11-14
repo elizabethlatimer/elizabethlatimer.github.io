@@ -3,61 +3,112 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
-  
+
 body {
-    background-color: #f4f4f4;
+    background-color: #7a7d7d;
     font-family: 'Nunito', sans-serif;
 }
 
-main {
-    max-width: 600px;
+.wrapper {
+    max-width: 700px;
     margin: 0 auto; 
+    background-color: #f4f4f4;
+    padding: 25px;
+
+}
+
+main {
+    padding: 25px 25px;
   }
 
 header {
-    max-width: 600px;
-    margin: 0 auto;
     text-align: center;
+    position: relative;
+}
+
+header div {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #34343f;
 }
 
 footer {
-    max-width: 600px;
-    margin: 0 auto;
+    position: relative;
+    text-align: center;
 }
 
-h1 {
+footer div {
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #34343f;
+
+}
+
+nav {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', serif;
+    background-color:none;
 }
 
-h3 {
-    font-display: 'EB Garamond', serif;
-}
-
-a.nav:link {
+a.nav:link, a.nav:visited {
     color: #34343f;
     text-decoration: none;
+    display: inline-block;
+    padding: 5px 14px;
 }
 
-a.nav:visited {
-    color: #34343f;
+a.navcurrent:link, a.navcurrent:visited, a.navcurrent:hover {
+    color: #7a7d7d
     text-decoration: none;
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: white;
 }
 
 a.nav:hover {
-    color: #eaa59a;
+    color: #34343f;
+    background-color: #eaa59a;
     text-decoration: none;
 }
-a:link {
-    color: #7a7d7d;
-    text-decoration: none;
-}
-a:visited {
+a:link, a:visited {
     color: #7a7d7d;
     text-decoration: none;
 }
 
 a:hover {
     color: #7a7d7d;
-    background-color: #eaa59a
     text-decoration: none;  
 }
+
+img.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #eaa59a;
+    object-fit: cover;
+    float: left;
+    margin: 25px 25px 25px 25px;  
+}
+
+img.cats {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #eaa59a;
+    object-fit: cover;
+}
+
+main div.image {
+    float: right;
+    clear: right;
+}
+
+.clearfix {
+    overflow: auto;
+  }
