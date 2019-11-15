@@ -18,7 +18,7 @@ body {
 }
 
 main {
-    padding: 25px 25px;
+    padding: 25px 10px;
   }
 
 header {
@@ -38,7 +38,7 @@ footer {
 
 footer div {
     position: relative;
-    padding: 10px;
+    padding-top: 15px;
     border-top: 1px solid #34343f;
 
 }
@@ -49,8 +49,65 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     background: white;
+    width:fit-content;
 }
 
+@media (min-width: 525px) {
+    img.headshot {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid #eaa59a;
+        object-fit: cover;
+        float: left;
+        margin: 25px 25px 25px 25px;  
+    }
+
+    main div.image {
+        float: right;
+        clear: right;
+        margin: 0px 0px 0px 15px;
+        width: 155px;
+    }
+
+    img.cats {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #eaa59a;
+        object-fit: cover;
+    }
+}
+@media (max-width: 524px) {
+    img.headshot {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid #eaa59a;
+        object-fit: cover;
+        margin: 25px 25px 25px 25px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main div.image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        text-align: center;
+    }
+
+    img.cats {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #eaa59a;
+        object-fit: cover;
+        clear:right;
+    }
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', serif;
     background-color:none;
@@ -61,6 +118,7 @@ a.nav:link, a.nav:visited {
     text-decoration: none;
     display: inline-block;
     padding: 5px 14px;
+    transition: all 0.5s ease;
 }
 
 a.navcurrent:link, a.navcurrent:visited, a.navcurrent:hover {
@@ -86,28 +144,11 @@ a:hover {
     text-decoration: none;  
 }
 
-img.headshot {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #eaa59a;
-    object-fit: cover;
-    float: left;
-    margin: 25px 25px 25px 25px;  
-}
 
-img.cats {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #eaa59a;
-    object-fit: cover;
-}
 
-main div.image {
-    float: right;
-    clear: right;
-}
+
+
+
 
 .clearfix {
     overflow: auto;
